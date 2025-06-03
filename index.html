@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farahnaz Faryan - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header" id="home">
+        <nav>
+            <div class="logo">Portfolio</div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul id="navMenu">
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+                <li><a href="#services" onclick="toggleMenu()">My Services</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">My Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">My Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact Me</a></li>
+            </ul>
+        </nav>
+
+        <div class="home">
+            <p>Hello, I am</p>
+            <h1>Farahnaz <span>Faryan</span></h1>
+            <p class="subtitle">I am a Web Developer</p>
+            <div class="cta">
+                <input type="email" class="email-input" placeholder="Enter Your Email">
+                <a href="#" class="btn">Let's Start</a>
+                <a href="#" class="btn btn-secondary">Play</a>
+            </div>
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="1.jpg" alt="Farahnaz Faryan">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <h2>Developer & Designer</h2>
+                <p class="para">I am Farahnaz Faryan — a passionate web designer, graphic designer, poet, writer, photographer, and artist. I also organize motivational seminars focused on personal growth and cultural development. Creativity and purpose shape everything I do.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link">Skills</p>
+                    <p class="tab-links">Experience</p>
+                    <p class="tab-links">Education</p>
+                </div>
+                
+                <div>
+                    <a href="#" class="about-btn">Download CV</a>
+                    <a href="#" class="about-btn">Hire Me</a>
+                    <a href="#" class="about-btn">View Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Custom website development with clean, efficient code. Responsive designs that work perfectly on all devices. Modern frameworks and technologies for optimal performance.</p>
+                <a href="#" class="service-btn">Learn More</a>
+            </div>
+            
+            <div class="service-box">
+                <div class="service-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3>Graphic Design</h3>
+                <p>Creative visual designs that combine aesthetics with usability. Clean layouts, effective color theory, and user-centered visuals for impactful branding and communication.</p>
+                <a href="#" class="service-btn">Learn More</a>
+            </div>
+            
+            <div class="service-box">
+                <div class="service-icon">
+                    <i class="fas fa-edit"></i>
+                </div>
+                <h3>Editing</h3>
+                <p>Precise and thoughtful editing to enhance clarity, tone, and flow. From grammar and structure to style and coherence, your content is refined to deliver its message effectively and professionally.</p>
+                <a href="#" class="service-btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My <span>Skills</span></h2>
+        <div class="skills">
+            <div>
+                <h3>HTML</h3>
+                <div class="bar html"></div>
+                <h3>CSS</h3>
+                <div class="bar css"></div>
+                <h3>Editing</h3>
+                <div class="bar editing"></div>
+            </div>
+            <div>
+                <h3>Java</h3>
+                <div class="bar java"></div>
+                <h3>Illustrator</h3>
+                <div class="bar illustrator"></div>
+                <h3>Photography</h3>
+                <div class="bar photo"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="text">
+            <h2>My Projects</h2>
+        </div>
+        <div class="project-cards">
+            <div class="card">
+                <h3>Proverbs Website</h3>
+                <br>
+                <p>An interactive site showcasing Afghan proverbs using HTML/CSS.</p>
+                <br>
+                <a href="https://faryan01.github.io/Afghan-Proverbs/?authuser=2" class="btn">GitHub Link</a>
+            </div>
+            <div class="card">
+                <h3>Movie Theater Website</h3>
+                <br>
+                <p>🎬Best Movie of 2025 Coming soon...</p>
+                <br>
+                <a href="https://faryan01.github.io/My-Movie-Theater-Website/?authuser=2" class="btn">GitHub Link</a>
+            </div>
+            <div class="card">
+                <h3>My Recipe Book</h3>
+                <br>
+                <p>A cozy and simple website to collect and share delicious and healthy recipes!.</p>
+                <br>
+                <a href="https://faryan01.github.io/My-Recipe-Book/" class="btn">GitHub Link</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact <span>Me!</span></h2>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Subject">
+            <textarea placeholder="Your Message" rows="5"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <div class="copyright">
+        <p>© 2025 Farahnaz Faryan. All Rights Reserved.</p>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
